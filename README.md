@@ -1,12 +1,12 @@
-ORUPHONES
+#ORUPHONES
 A tech start-up, India's first-ever online C2C marketplace dedicated to buying and selling Old, Refurbished & Used phones.
 
 
-SDK VERSION
+#SDK VERSION
 Flutter 3.10.5 Stable channel
 Dart 3.0.5
 
-Packages Used
+#Packages Used
 Dio for http Requests
 flutter svg for rendring svgs.
 cached_network_image for loading network images.
@@ -17,12 +17,12 @@ cloud_firestore for storing fcm tokens.
 
 
 
-API Reference
+#API Reference
 Link to package manager website.
 https://pub.dev/
 
 
-Run Locally
+##Run Locally
 Before running Flutter on your machine locally, there are a few things you should check:
 System Requirements: Ensure that your computer meets the minimum system requirements to run Flutter. You can check the system requirements on the Flutter website.
 
@@ -44,15 +44,15 @@ first run entrypoint in terminal to clean and get dependencies
 
 
 
-RELEASE APK
+#RELEASE APK
 flutter build apk --relase for fat apk.
 flutter buil apk --split-per-abi for architectural wise distributed archive. 
 
-BUILD APP BUNDLE
+#BUILD APP BUNDLE
 flutter build appbundle --no-tree-shake-icons
 
 
-MEMORY OPTIMIZATION
+#MEMORY OPTIMIZATION
 => For better memory optimization we are using vector images which are very less in comparison to jpg or png.
 => We are using the CachedNetworkImage package for loading images which uses lazy loading so the memory consumption will be less while loading a list of images. 
 => We have optimized the code as per the flutter and dart lint we are using const and final everywhere where it is possible,  which will avoid memory leaks.
